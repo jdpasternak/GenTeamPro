@@ -32,7 +32,7 @@ Follow these steps or watch the walkthrough video below.
 
 ### Walkthrough Video
 
-[![a walkthrough for the application](./assets/images/walkthrough/walkthrough_First_Frame.png)](https://jdpasternak.github.io/team-profile-generator/)
+[![a walkthrough for the application](./assets/images/walkthrough/walkthrough_First_Frame.png)](https://jdpasternak.github.io/GenTeamPro/)
 
 ## Tests
 
