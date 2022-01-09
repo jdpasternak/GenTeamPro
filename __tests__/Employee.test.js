@@ -2,7 +2,7 @@ const Employee = require("../lib/Employee");
 
 describe("Employee", () => {
   describe("constructor", () => {
-    it("creates an Employee object", () => {
+    it("should create an Employee object", () => {
       let employee = new Employee("John", 1004, "john@company.org");
 
       expect(employee.name).toBe("John");
@@ -12,7 +12,7 @@ describe("Employee", () => {
   });
 
   describe("getName", () => {
-    it("returns the Employee object's name", () => {
+    it('should return "John"', () => {
       const employee = new Employee("John", 1004, "john@company.org");
 
       expect(employee.getName()).toBe("John");
@@ -20,7 +20,7 @@ describe("Employee", () => {
   });
 
   describe("getId", () => {
-    it("returns the Employee object's ID", () => {
+    it('should return "1004"', () => {
       const employee = new Employee("John", 1004, "john@company.org");
 
       expect(employee.getId()).toBe(1004);
@@ -28,7 +28,7 @@ describe("Employee", () => {
   });
 
   describe("getEmail", () => {
-    it("returns the Employee object's email", () => {
+    it('should return "john@company.com"', () => {
       const employee = new Employee("John", 1004, "john@company.org");
 
       expect(employee.getEmail()).toBe("john@company.org");
