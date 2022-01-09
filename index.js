@@ -64,7 +64,6 @@ const promptManager = () => {
     .then((info) => {
       info.role = "Manager";
       teamMembers.push(info);
-      console.log(teamMembers);
       switch (info.proceed) {
         case "Add an engineer":
           return promptEngineer();
@@ -223,14 +222,12 @@ const promptIntern = () => {
 promptManager()
   .then(() => createTeam(teamMembers))
   .then((response) => {
-    console.log(response.data);
     return generateHtml(response.data);
   })
   .then((response) => {
-    console.log(response.data);
     return writeHTML(response.data);
   })
-  .then((response) => {
+  .then(() => {
     return copyCSS();
   })
   .catch((err) => console.log(err));
