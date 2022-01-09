@@ -17,4 +17,30 @@ describe("Manager", () => {
       expect(manager.getRole()).toBe("Manager");
     });
   });
+
+  describe("getOfficeNumber", () => {
+      it("should return 405", () => {
+        const manager = new Manager(
+            "Bossman",
+            1001,
+            "imtheboss@company.org",
+            405
+          );
+
+        expect(manager.getOfficeNumber()).toBe(405)
+      })
+  })
+
+  describe("getRole", () => {
+      it("should return \"Manager\"", () => {
+        const manager = new Manager(
+            "Bossman",
+            1001,
+            "imtheboss@company.org",
+            405
+          );
+
+        expect(manager.getRole()).toBe("Manager")
+      })
+  })
 });
